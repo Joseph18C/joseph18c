@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIRTCUITOS</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <h1>Circuitos</h1>
+  </header>
+  <section class="conteiner">
+    <div class="matrix">
+      <h2>Matriz 3x3</h2>
+      <div class="col">
+        <div class="col--conteiner">
+          <div>
+            <input class="ecua1" type="text">
+            <label for="">l<sub>x</sub></label>
+          </div>
+          <p class="max">+</p>
+          <div>
+            <input class="ecua1" type="text">
+            <label for="">l<sub>y</sub></label>
+          </div>
+          <p class="max">+</p>
+          <div>
+            <input class="ecua1" type="text">
+            <label for="">l<sub>z</sub></label>
+          </div>
+        </div>
+        <div class="col--value">
+          <p class="max">=</p>
+          <input class="ecua1" type="text">
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="col--conteiner">
+          <div>
+            <input class="ecua2" type="text">
+            <label for="">l<sub>x</sub></label>
+          </div>
+          <p class="max">+</p>
+          <div>
+            <input class="ecua2" type="text">
+            <label for="">l<sub>y</sub></label>
+          </div>
+          <p class="max">+</p>
+          <div>
+            <input class="ecua2" type="text">
+            <label for="">l<sub>z</sub></label>
+          </div>
+        </div>
+        <div class="col--value">
+          <p class="max">=</p>
+          <input class="ecua2" type="text">
+        </div>
+      </div>
+      <div class="col">
+        <div class="col--conteiner">
+          <div>
+            <input class="ecua3" type="text">
+            <label for="">l<sub>x</sub></label>
+          </div>
+          <p class="max">+</p>
+          <div>
+            <input class="ecua3" type="text">
+            <label for="">l<sub>y</sub></label>
+          </div>
+          <p class="max">+</p>
+          <div>
+            <input class="ecua3" type="text">
+            <label for="">l<sub>y</sub></label>
+          </div>
+        </div>
+        <div class="col--value">
+          <p class="max">=</p>
+          <input class="ecua3" type="text">
+        </div>
+      </div>
+    </div>
+    <div class="join">
+      <button class="btn">Resolver</button>
+      <button class="btn">Matrix 2x2</button>
+      <button class="btn">Matrix 3x3</button> 
+    </div>
+  </section>
+  <section class="resolution">
+    <div class="solution" id="resolution--value">
+      <h2>Resolucion</h2>
+    </div>
+    <div class="values">
+      <h2>Resultados</h2>
+      <p class="values-ex">l<sub>x</sub></p>
+      <p class="values-ex">l<sub>y</sub></p>
+      <p class="values-ex">l<sub>z</sub></p>
+    </div>
+  </section>
+  <script src="./src/index.js"></script>
+</body>
+</html>
