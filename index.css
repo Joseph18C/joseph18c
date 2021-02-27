@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Akaya Telivigala", cursive;
 }
 body {
   width: 100%;
+  height: auto;
 }
 /*Cabecera*/
 header {
@@ -18,107 +19,203 @@ header {
   color: white;
   position: fixed;
   top: 0;
+  box-shadow: -9px 12px 20px 0 #c120c1;
 }
-/*Seccion Matricial*/
 .conteiner {
-  margin-top: 100px;
   width: 100%;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.matrix {
-  width: 400px;
-  height: 400px;
-  border: 1px solid purple;
-  border-radius: 20px;
-  margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.col {
-  width: 90%;
-  height: 25%;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 90%;
-  justify-content: center;
-  align-items: center;
-}
-.col--conteiner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.col--value {
+  height: 800px;
+  margin-top: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
-.col--value .max {
-  margin: 0 5px;
-  font-size: 20px;
-}
-label,
-p {
-  font-weight: 900;
-}
-input {
-  width: 40px;
-  height: 40px;
-  box-sizing: border-box;
-  padding: 12px;
-  font-size: 18px;
-  outline: none;
-}
-input:hover {
-  outline: 1px solid blue;
-}
-
-/*Events Buttons*/
-.join {
-  width: 50%;
-  height: 150px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.join .btn {
-  width: 35%;
-  height: 40%;
-  border: none;
-  margin: 2px 15px;
-  border-radius: 20px;
-  outline: none;
-  background-color: #c329c3;
-  color: white;
-  font-size: 20px;
-}
-.join .btn:hover {
-  background-color: #f80bf8;
-  color: #0c0808;
-  font-weight: 900;
-  border: 1px solid purple;
-}
-.resolution {
-  width: 90%;
-  height: 400px;
-  box-sizing: border-box;
-  margin: 50px;
-  display: flex;
-  justify-content: space-between;
-}
-.solution,
-.values {
-  width: 30%;
-  height: 80%;
+.cita {
+  width: 40%;
+  height: 20%;
   text-align: center;
-  border: 1px solid purple;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.cita h1 {
+  font-size: 30px;
+  color: #c329c3;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+}
+.cita p {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.dedicaMessage {
+  border-radius: 10px;
+  width: 60%;
+  height: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.dateImg {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 4px 6px 20px 4px #749f7f;
+}
+.citaMessage {
+  width: 50%;
+  height: 80%;
+  box-shadow: 0 0 10px 0 red;
+  border-radius: 10px;
+  margin: 0 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+.citaMessage p {
+  margin-top: 20px;
+}
+a:hover {
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1200px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+  .conteiner {
+    margin-top: 50px;
+  }
+  .cita {
+    padding: 5px;
+  }
+  .cita p {
+    font-size: 20px;
+  }
+  .citaMessage {
+    font-size: 15px;
+    width: 50%;
+    height: 90%;
+  }
+  .citaMessage p {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .dedicaMessage {
+    width: 90%;
+    height: 50%;
+  }
+  .dateImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 4px 6px 20px 4px #749f7f;
+  }
+}
+@media screen and (max-width: 850px) {
+  .cita {
+    width: 50%;
+    height: 30%;
+  }
+  .conteiner {
+    justify-content: center;
+  }
+  .dedicaMessage {
+    width: 95%;
+    height: 50%;
+    margin-top: 40px;
+  }
+  .citaMessage {
+    font-size: 15px;
+    width: 60%;
+    height: 90%;
+  }
+  .citaMessage p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .dateImg {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 4px 6px 20px 4px #749f7f;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  body {
+    width: 100%;
+    height: 900px;
+  }
+  .conteiner {
+    margin-top: 100px;
+    height: auto;
+  }
+  .cita {
+    width: 80%;
+    height: 30%;
+  }
+  .dedicaMessage {
+    border-radius: 10px;
+    width: 90%;
+    height: 800px;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .citaMessage {
+    width: 90%;
+    height: 50%;
+    margin-top: 10px;
+  }
+  .dateImg {
+    margin-top: 30px;
+    width: 250px;
+    height: 250px;
+  }
+  .footer {
+    height: 100px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer p {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 300px) {
+  body {
+    width: 100%;
+    height: 900px;
+  }
+  .citaMessage {
+    margin-top: 5px;
+  }
+  .citaMessage p {
+    font-size: 15px;
+  }
+  .dedicaMessage {
+    border-radius: 10px;
+    width: 90%;
+    height: 600px;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dateImg {
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+  }
 }
